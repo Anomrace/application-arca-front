@@ -1,0 +1,36 @@
+// app global css in SCSS form
+/* 🔥 Fixer l'en-tête des jours */
+.vuecal__weekdays {
+  position: sticky;
+  top: 0;
+  background: #fff; /* 🔥 Fond blanc pour éviter que ça devienne invisible */
+  z-index: 10;
+  border-bottom: 2px solid #ccc;
+}
+
+/* 🔥 Réduire la largeur des événements et les centrer */
+/* 🔥 Réduire la largeur des événements et les centrer */
+.vuecal__event {
+  max-width: 90%; /* Ajuste la largeur (essaie entre 60% et 80%) */
+  position: absolute !important; /* 🔥 Assure que vue-cal ne réécrit pas la position */
+  left: 0; /* 🔥 Positionne le centre de l'événement au milieu */
+  transform: translateX(5%); /* 🔥 Centre l'événement parfaitement */
+  border-radius: 3px; /* 🔥 Coins arrondis */
+  background: #0277bd !important; /* 🔥 Bleu foncé */
+  color: white !important; /* 🔥 Texte blanc */
+  padding: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center; /* 🔥 Centre le texte */
+}
+
+/* 🔥 Effet `hover` */
+.vuecal__event:hover {
+  background: #01579b !important;
+}
+
+/* 🔥 Ligne rouge pour indiquer l'heure actuelle */
+.vuecal__now-line {
+  background: red !important;
+  height: 2px;
+}
